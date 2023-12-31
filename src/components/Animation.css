@@ -1,0 +1,6 @@
+
+@media (max-width: 768px) {
+    .animation-spline{
+      display: none; /* or any other styles to remove or hide the class */
+    }
+  }

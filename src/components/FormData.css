@@ -1,0 +1,8 @@
+.form-border {
+
+    border-style: solid;
+    border-width: 2px; /* Set the desired border width */
+    border-image: linear-gradient(to bottom, rgb(222, 1, 222), rgb(2, 221, 2), rgb(0, 0, 0)); /* Define the gradient */
+    border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+
+}
