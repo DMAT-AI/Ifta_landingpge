@@ -2,7 +2,7 @@ import "./HowitWorks.css"
 
 const HowItWorks = () => {
   return (
-    <div className="container text-white mb-lg-5">3.
+    <div className="container text-white mb-lg-5" id="how-it-works">3.
         <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-purple-400 to-green-600 mb-5 ">
            How it works
         </h1>

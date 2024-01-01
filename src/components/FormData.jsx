@@ -29,9 +29,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='container mb-5 mt-5 text-white'>4.
+    <div className='container mb-5 mt-5 text-white' id='contact-us'>4.
             <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-purple-400 to-green-600 mb-5 ">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="form-border">
+      <form onSubmit={handleSubmit} 
+      
+      className="form-border">
 
       <div className="row ml-5 py-5">
         <div className="col-md-6"> 

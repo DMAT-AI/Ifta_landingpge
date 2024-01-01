@@ -4,7 +4,7 @@ const NavBar = () => {
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent ml-5 mr-5">
             <div className="container-fluid">
-                <a className="navbar-brand text-3xl text-white" href="#">
+                <a className="navbar-brand text-3xl text-white" href="/">
                 IFTA.
                 </a>
                 <button
@@ -21,22 +21,22 @@ const NavBar = () => {
                 {/* <div className="collapse navbar-collapse" > */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a className="nav-link active  text-white" aria-current="page" href="#">
+                    <a className="nav-link active  text-white" aria-current="page" href="#about-section">
                        1. About Section
                     </a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link  text-white" href="#">
+                    <a className="nav-link  text-white" href="#key-features">
                        2. Key Features
                     </a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link  text-white" href="#">
+                    <a className="nav-link  text-white" href="#how-it-works">
                        3. How it Works
                     </a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link disabled  text-white" aria-disabled="true" href="#">
+                    <a className="nav-link disabled  text-white" aria-disabled="true" href="#contact-us">
                         4.Contact Us
                     </a>
                     </li>

@@ -4,7 +4,7 @@ import DescriptionText from './DescriptionText'
 const HeroSection = () => {
   return (
     <div>
-        <div className='container'>
+        <div className='container' id="about-section">
         <div className='row justify-content-start'>
           <div className='col-md-4 d-flex mt-5 text-start'>
             <DescriptionText />
