@@ -1,0 +1,19 @@
+.video {
+    background: linear-gradient(45deg, purple, green);
+
+}
+
+.button {
+    background: linear-gradient(45deg, purple, green); /* Adjust colors as needed */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    /* Optional: Add styles for hover state */
+    opacity: 0.8; /* Adjust opacity for hover state */
+  }
+  
