@@ -8,7 +8,7 @@ const DescriptionText = () => {
         is to transform agriculture for better output at a minimum environmental cost by leveraging
         on Artificial Intelligence and data-driven decisions.
         <div>
-          <button type="button" className="btn btn-outline-light rounded-none mt-5" >Join waiting list &rarr;</button>
+          <a type="button" className="btn btn-outline-light rounded-none mt-5" href="https://share.formbold.com/oyOXW" target ="_blank" rel="noreferrer" >Join waiting list &rarr;</a>
         </div>
       </div>
     </div>

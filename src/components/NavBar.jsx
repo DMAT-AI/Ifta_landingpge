@@ -36,7 +36,7 @@ const NavBar = () => {
                     </a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link disabled  text-white" aria-disabled="true" href="#contact-us">
+                    <a className="nav-link  text-white" aria-disabled="true" href="https://share.formbold.com/oyOXW" target ="_blank" rel="noreferrer">
                         4.Contact Us
                     </a>
                     </li>
