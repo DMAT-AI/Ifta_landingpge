@@ -1,0 +1,88 @@
+/* Navbar styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent; /* Change this to your desired background color */
+    color: white;
+  }
+  
+  .brand a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .burger {
+    display: none; /* Hide the burger menu initially on larger screens */
+    cursor: pointer;
+  }
+  
+  .burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.4s;
+
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #d000ff; /* Change this to your desired hover color */
+  }
+  
+  /* Media query for responsive design */
+  
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+/* Show the burger menu on smaller screens */
+    }
+  
+    .nav-links {
+      display: none; /* Hide the navigation links on smaller screens by default */
+      flex-direction: column;
+      position: absolute;
+     /* Stack items vertically */
+      
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      z-index: 1;
+    }    
+    .nav-links ul {
+        flex-direction: column; /* Stack items vertically for the burger menu */
+      }
+    .nav-links.show {
+      display: flex;
+      flex-direction: column; /* Show the navigation links when the burger menu is clicked */
+      align-items: flex-start;
+    }
+  }
+  

@@ -1,53 +1,60 @@
+import  { useState } from 'react';
+import './Navbar.css'; // Import your CSS file
 
-const NavBar = () => {
+function Navbar() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-transparent ml-5 mr-5">
-            <div className="container-fluid">
-                <a className="navbar-brand text-3xl text-white" href="/">
-                IFTA.
+      <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
+        <div className="container-fluid">
+          <div className="brand" onClick={() => setIsNavOpen(false)}>
+            <a href="/">IFTA.</a>
+          </div>
+          <button className="burger" onClick={toggleNav}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
+            <ul>
+              <li>
+                <a href="#about-section" onClick={() => setIsNavOpen(false)}>
+                  1. About Section
                 </a>
-                <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+              </li>
+              <li>
+                <a href="#key-features" onClick={() => setIsNavOpen(false)}>
+                  2. Key Features
+                </a>
+              </li>
+              <li>
+                <a href="#how-it-works" onClick={() => setIsNavOpen(false)}>
+                  3. How it Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://share.formbold.com/oyOXW"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsNavOpen(false)}
                 >
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                {/* <div className="collapse navbar-collapse" > */}
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                    <a className="nav-link active  text-white" aria-current="page" href="#about-section">
-                       1. About Section
-                    </a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link  text-white" href="#key-features">
-                       2. Key Features
-                    </a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link  text-white" href="#how-it-works">
-                       3. How it Works
-                    </a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link  text-white" aria-disabled="true" href="https://share.formbold.com/oyOXW" target ="_blank" rel="noreferrer">
-                        4.Contact Us
-                    </a>
-                    </li>
-                </ul>
-                {/* </div> */}
-            </div>
-            </nav>
+                  4. Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <hr className="bg-white text-2xl"></hr>
-   
     </div>
   );
 }
 
-export default NavBar;
+export default Navbar;
+

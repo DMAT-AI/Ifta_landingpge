@@ -2,7 +2,7 @@ import React from 'react';
 import VideoPage from './pages/VideoPage.jsx';
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import App from './App.jsx'
 import {
   createBrowserRouter,
